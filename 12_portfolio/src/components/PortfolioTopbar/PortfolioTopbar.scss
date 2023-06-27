@@ -1,0 +1,29 @@
+.topbar-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #111111;
+
+  .topbarLogo {
+    width: 50px;
+  }
+
+  .active {
+    color: #687464;
+  }
+
+  a {
+    margin-left: 2rem;
+    font-size: 18px;
+
+    &:hover {
+      color: #687464;
+    }
+  }
+
+  .icon {
+    font-size: 1.3rem;
+  }
+}

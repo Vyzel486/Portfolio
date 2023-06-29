@@ -1,0 +1,66 @@
+@import "../../styles/colors.scss";
+
+.portfolioWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolioHero {
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  &.animate-in .heroTitle {
+    transform: translateX(0);
+  }
+
+  &.animate-in .heroImageWrapper {
+    transform: translateX(0);
+  }
+}
+
+.heroTitle {
+  transform: translateX(-100%);
+  transition: transform 2s ease-in-out;
+
+  h1 {
+    color: $secondaryDark;
+    font-size: 102px;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    color: $text;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: $text;
+    width: 400px;
+  }
+}
+
+.heroImageWrapper {
+  transform: translatex(100%);
+  transition: transform 2s ease-in-out;
+
+  img {
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.cardWrapper {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}

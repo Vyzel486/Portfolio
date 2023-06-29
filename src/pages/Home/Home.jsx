@@ -12,7 +12,7 @@ const Home = () => {
   };
 
   const handleGitHubClick = () => {
-    window.open("https://github.com/Vyzel486/", "_blank");
+    window.open("https://github.com/", "_blank");
   };
 
   useEffect(() => {
@@ -32,9 +32,9 @@ const Home = () => {
       </div>
 
       <div className="icons-container">
-        <FaLinkedin className="icon" onClick={handleLinkedInClick} />
-        <FaFacebook className="icon" onClick={handleFacebookClick} />
-        <FaGithub className="icon" onClick={handleGitHubClick} />
+        <FaLinkedin className="icon-linkedin" onClick={handleLinkedInClick} />
+        <FaFacebook className="icon-facebook" onClick={handleFacebookClick} />
+        <FaGithub className="icon-github" onClick={handleGitHubClick} />
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import PortfolioTopbar from "../components/PortfolioTopbar/PortfolioTopbar";
+import "./Layout.scss";
 
 const MainLayout = ({ children }) => {
   return (

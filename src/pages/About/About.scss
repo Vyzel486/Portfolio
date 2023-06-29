@@ -1,0 +1,157 @@
+@import "../../styles/colors.scss";
+
+.about-container {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  &.animate-in .about-description {
+    transform: translateY(0);
+  }
+
+  &.animate-in .main-image-container {
+    transform: translateX(0);
+  }
+
+  .about-description {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    transform: translateY(-100%);
+    transition: transform 2s ease-in-out;
+
+    h1 {
+      color: $secondaryDark;
+      font-size: 102px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    p,
+    h2 {
+      color: $text;
+      text-align: justify;
+      margin-bottom: 1rem;
+    }
+
+    &-images {
+      display: flex;
+      gap: 1rem;
+
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+  .main-image-container {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: flex-end;
+    transform: translatex(100%);
+    transition: transform 2s ease-in-out;
+
+    &.animate-in {
+      transform: translateX(0);
+    }
+
+    .main-image {
+      width: 500px;
+      height: 350px;
+      object-fit: cover;
+      object-position: center;
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+.programmingWay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  overflow: hidden;
+
+  &.animate-in .programmingWay-imageContainer {
+    transform: translateX(0);
+  }
+
+  .programmingWay-imageContainer {
+    transform: translateX(-100%);
+    transition: transform 2s ease-in-out;
+
+    .programmingWay-image {
+      width: 500px;
+    }
+  }
+
+  .programmingWay-description {
+    margin: 0 2rem;
+    text-align: right;
+
+    h2 {
+      color: $secondaryDark;
+      text-align: right;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: justify;
+    }
+  }
+
+  &.animate-in {
+    .programmingWay-imageContainer {
+      transform: translateX(0);
+    }
+  }
+}
+
+.present {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  overflow: hidden;
+  &.animate-in .present-imageContainer {
+    transform: translateX(0);
+  }
+
+  .present-description {
+    margin: 0 2rem;
+
+    h2 {
+      color: $secondaryDark;
+      text-align: justify;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .present-imageContainer {
+    transform: translateX(100%);
+    transition: transform 2s ease-in-out;
+
+    .present-image {
+      width: 500px;
+    }
+  }
+
+  &.animate-in {
+    .present-imageContainer {
+      transform: translateX(0);
+    }
+  }
+}

@@ -5,7 +5,10 @@ import "./Portfolio.scss";
 
 const Portfolio = () => {
   const handlePortfolioCardClick = () => {
-    window.open("https://github.com/Vyzel486/HTML-ir-CSS-exam.git", "_blank");
+    window.open(
+      "https://github.com/Vyzel486/HTML-ir-CSS-exam/blob/master/README.md",
+      "_blank"
+    );
   };
 
   useEffect(() => {

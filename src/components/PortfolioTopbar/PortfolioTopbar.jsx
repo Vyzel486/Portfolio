@@ -20,7 +20,7 @@ const Topbar = () => {
     <nav className={`topbar-container${clicked ? " logo-clicked" : ""}`}>
       <div>
         <Link to={HOME_ROUTE} onClick={handleLogoClick}>
-          <img className="topbarLogo" src={logo} alt="RM logo" />
+          <img className="topbarLogo" src={logo} alt="RM-logo" />
         </Link>
       </div>
       <div className="topbar-items">
